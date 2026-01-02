@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing cybersecurity expertise, software engineering projects, and iOS development skills.
 
-## 🌟 Features
+## Features
 
 - **Modern Design**: Premium UI with smooth animations and micro-interactions
 - **Dark Mode**: Full dark mode support with persistent theme preference
@@ -11,7 +11,7 @@ A modern, responsive portfolio website showcasing cybersecurity expertise, softw
 - **Accessibility**: Semantic HTML and ARIA labels for better accessibility
 - **Interactive Elements**: Animated skill bars, counting stats, and smooth scrolling
 
-## 🎨 Design Highlights
+## Design Highlights
 
 - **Gradient Backgrounds**: Dynamic gradient orbs with parallax effect
 - **Smooth Animations**: Intersection Observer API for scroll-triggered animations
@@ -19,7 +19,7 @@ A modern, responsive portfolio website showcasing cybersecurity expertise, softw
 - **Color System**: Comprehensive design tokens for consistent theming
 - **Glassmorphism**: Modern frosted glass effects on navigation
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 MDportfolio/
@@ -30,7 +30,7 @@ MDportfolio/
 └── Copy of OWASP Honeynet...pdf       # Research paper (linked in projects)
 ```
 
-## 🚀 Featured Projects
+## Featured Projects
 
 ### 1. OWASP Honeynet Experiment
 - **Type**: Cybersecurity Research (Capstone Project)
@@ -75,7 +75,7 @@ MDportfolio/
 - Splunk, Postman
 - MongoDB, PostgreSQL
 
-## 📋 Customization Guide
+## Customization Guide
 
 ### Update Personal Information
 
@@ -113,7 +113,7 @@ Edit CSS variables in `styles.css` (lines 8-20):
 }
 ```
 
-## 🌐 Deployment Options
+## Deployment Options
 
 ### Option 1: GitHub Pages (Recommended - Free)
 
@@ -136,7 +136,7 @@ Edit CSS variables in `styles.css` (lines 8-20):
 2. Import your GitHub repository
 3. Deploy with one click
 
-## 📱 Testing
+## Testing
 
 ### Local Testing
 
@@ -156,12 +156,12 @@ python3 -m http.server 8000
 ### Browser Compatibility
 
 Tested and working on:
-- ✅ Chrome/Edge (latest)
-- ✅ Firefox (latest)
-- ✅ Safari (latest)
-- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 🎯 SEO Optimization
+## SEO Optimization
 
 The portfolio includes:
 - Semantic HTML5 elements
@@ -182,7 +182,7 @@ Add these meta tags to `<head>`:
 <meta property="og:image" content="path/to/preview-image.jpg">
 ```
 
-## 📸 Adding Screenshots
+## Adding Screenshots
 
 To add project screenshots:
 
@@ -193,7 +193,7 @@ To add project screenshots:
    <div class="project-image" style="background-image: url('images/project-screenshot.jpg');">
    ```
 
-## ✨ Features to Add (Optional)
+## Features to Add (Optional)
 
 - [ ] Contact form with backend integration
 - [ ] Blog section for technical articles
@@ -202,7 +202,7 @@ To add project screenshots:
 - [ ] Project case studies with detailed pages
 - [ ] Analytics integration (Google Analytics)
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Dark mode not persisting
 - Check browser localStorage is enabled
@@ -216,17 +216,17 @@ To add project screenshots:
 - Resize window or reload page
 - Check if viewport meta tag is present
 
-## 📄 License
+## License
 
 This portfolio template is free to use and modify for personal use.
 
-## 🤝 Credits
+## Credits
 
 - **Design & Development**: Custom built
 - **Fonts**: [Inter](https://fonts.google.com/specimen/Inter) by Google Fonts
 - **Icons**: Unicode emojis (universal support)
 
-## 📞 Support
+## Support
 
 For questions about this portfolio:
 - Review the code comments
@@ -234,7 +234,4 @@ For questions about this portfolio:
 - Ensure all files are in the same directory
 
 ---
-
-**Built with ❤️ for showcasing technical excellence**
-
 *Last updated: January 2026*
