@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Dedvukaj - Cybersecurity & Software Engineer</title>
+    <meta name="description"
+        content="Cybersecurity and Software Engineering portfolio showcasing network security projects, iOS development, and cloud infrastructure expertise.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">MD</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-badge">Available for Opportunities</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Michael Dedvukaj</span>
+            </h1>
+            <h2 class="hero-subtitle">Cybersecurity & Software Engineer</h2>
+            <p class="hero-description">
+                Specializing in network security, threat analysis, and secure iOS application development.
+                Passionate about building robust security solutions and creating seamless user experiences.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll to explore</span>
+                <div class="scroll-indicator"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Recent graduate with a strong foundation in cybersecurity and network engineering,
+                        complemented by hands-on experience in iOS development and cloud infrastructure.
+                    </p>
+                    <p>
+                        My academic journey culminated in a comprehensive <strong>OWASP Honeynet Experiment</strong>
+                        for my senior capstone project, where I designed and deployed a sophisticated honeypot
+                        system to analyze real-world cyber threats and attack patterns.
+                    </p>
+                    <p>
+                        Beyond cybersecurity, I've developed and launched <strong>QuickSend</strong>, an iOS
+                        application focused on secure file sharing, demonstrating my ability to create
+                        user-friendly applications while maintaining security best practices.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎓</div>
+                            <div class="highlight-text">
+                                <h4>Education</h4>
+                                <p>B.S. in Cybersecurity & Network Engineering</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">💼</div>
+                            <div class="highlight-text">
+                                <h4>Focus Areas</h4>
+                                <p>Network Security, iOS Development, Cloud Infrastructure</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🚀</div>
+                            <div class="highlight-text">
+                                <h4>Current Status</h4>
+                                <p>Seeking opportunities in cybersecurity and software engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="31">0</div>
+                        <div class="stat-label">Page Research Document</div>
+                        <div class="stat-description">OWASP Honeynet Analysis</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="1000">0</div>
+                        <div class="stat-label">App Store Downloads</div>
+                        <div class="stat-description">QuickSend Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Security Events Analyzed</div>
+                        <div class="stat-description">Honeynet Deployment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Honeynet Project -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-badge">Capstone Project</div>
+                        <div class="project-icon">🛡️</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>OWASP Honeynet Experiment</h3>
+                        <p class="project-description">
+                            Comprehensive senior capstone project involving the design, deployment, and analysis
+                            of a sophisticated honeypot system. Captured and analyzed real-world cyber attack
+                            patterns, malware samples, and threat actor behaviors across multiple protocols.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <span class="highlight-label">Duration:</span>
+                                <span class="highlight-value">Full Academic Semester</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-label">Team Size:</span>
+                                <span class="highlight-value">Collaborative Group Project</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-label">Documentation:</span>
+                                <span class="highlight-value">31-Page Research Paper</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Network Security</span>
+                            <span class="tech-tag">Honeypot Systems</span>
+                            <span class="tech-tag">Threat Analysis</span>
+                            <span class="tech-tag">OWASP</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Wireshark</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="Copy of OWASP Honeynet Experiment Final Version.pdf" class="project-link"
+                                target="_blank">
+                                <span>View Research Paper</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QuickSend Project -->
+                <div class="project-card">
+                    <div class="project-image quicksend-bg">
+                        <div class="project-badge">iOS App</div>
+                        <div class="project-icon">📱</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>QuickSend</h3>
+                        <p class="project-description">
+                            Secure file sharing iOS application featuring intuitive UI/UX design, real-time
+                            file transfer capabilities, and subscription-based tier management. Built with
+                            Swift and modern iOS development practices.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <span class="highlight-label">Platform:</span>
+                                <span class="highlight-value">iOS 18.5+</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-label">Status:</span>
+                                <span class="highlight-value">Live on App Store</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">UIKit</span>
+                            <span class="tech-tag">iOS Development</span>
+                            <span class="tech-tag">Cloud Storage</span>
+                            <span class="tech-tag">StoreKit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <span>View on App Store</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Project Placeholder -->
+                <div class="project-card">
+                    <div class="project-image security-bg">
+                        <div class="project-badge">Security Tool</div>
+                        <div class="project-icon">🔐</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Network Security Analysis</h3>
+                        <p class="project-description">
+                            Developed custom scripts and tools for network traffic analysis, vulnerability
+                            assessment, and security monitoring. Implemented automated threat detection
+                            and reporting systems.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Network Analysis</span>
+                            <span class="tech-tag">Security Monitoring</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I bring to the table</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">🔒</div>
+                        <h3>Cybersecurity</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Network Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Threat Analysis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Vulnerability Assessment</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Security Monitoring</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">💻</div>
+                        <h3>Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Swift / iOS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git / Version Control</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">☁️</div>
+                        <h3>Infrastructure</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS Cloud Services</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux Systems</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Network Configuration</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">🛠️</div>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tool-tag">Wireshark</span>
+                        <span class="tool-tag">Nmap</span>
+                        <span class="tool-tag">Xcode</span>
+                        <span class="tool-tag">VS Code</span>
+                        <span class="tool-tag">Burp Suite</span>
+                        <span class="tool-tag">Metasploit</span>
+                        <span class="tool-tag">Splunk</span>
+                        <span class="tool-tag">Postman</span>
+                        <span class="tool-tag">MongoDB</span>
+                        <span class="tool-tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Let's connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to collaborate?</h3>
+                    <p>
+                        I'm actively seeking opportunities in cybersecurity, software engineering, and iOS development.
+                        Whether you're looking for a dedicated team member or want to discuss potential projects,
+                        I'd love to hear from you.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:mikeydedvukaj@icloud.com" class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-info">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">Contact me</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/michael-dedvukaj" class="contact-method" target="_blank">
+                            <div class="method-icon">💼</div>
+                            <div class="method-info">
+                                <span class="method-label">LinkedIn</span>
+                                <span class="method-value">Connect with me</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/mdeezv2" class="contact-method" target="_blank">
+                            <div class="method-icon">💻</div>
+                            <div class="method-info">
+                                <span class="method-label">GitHub</span>
+                                <span class="method-value">View my code</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <h4>Download Resume</h4>
+                        <p>Get a comprehensive overview of my experience and qualifications</p>
+                        <a href="#" class="btn btn-primary">
+                            <span>Download CV</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 3V13M10 13L6 9M10 13L14 9M4 17H16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Michael Dedvukaj</h3>
+                    <p>Cybersecurity & Software Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Michael Dedvukaj. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
