@@ -1058,41 +1058,33 @@ section {
     }
 
     .hamburger {
-        display: flex;
-        z-index: 1002;
+        display: none !important;
     }
 
     .nav-menu {
-        display: none;
-        /* Hide by default */
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 100vh;
-        background: var(--color-bg);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: var(--spacing-md);
-        padding: var(--spacing-xl);
-        z-index: 1001;
-    }
-
-    .nav-menu.active {
         display: flex;
-        /* Show when active */
+        position: static;
+        height: auto;
+        background: transparent;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0;
+        width: auto;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        z-index: auto;
     }
 
     .nav-link {
-        font-size: 2rem;
-        /* Made larger for easier tapping */
-        font-weight: 700;
-        color: var(--color-text);
-        /* Ensures contrast against background */
-        opacity: 1;
-        /* Force opacity */
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: var(--color-text-secondary);
+        padding: 0.25rem;
+    }
+
+    .nav-link.active {
+        color: var(--color-primary);
     }
 
     .theme-toggle {
