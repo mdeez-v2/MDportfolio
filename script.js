@@ -141,7 +141,7 @@ function animateSkillBars(skillCategory) {
 function animateStatNumber(statCard) {
     const numberElement = statCard.querySelector('.stat-number');
     const target = parseInt(numberElement.getAttribute('data-target'));
-    const duration = 2700; // 3 seconds
+    const duration = 2400; // 3 seconds
     const increment = target / (duration / 16); // 60fps
     let current = 0;
 
