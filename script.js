@@ -176,75 +176,26 @@ window.addEventListener('mousemove', (e) => {
 // ===================================
 // Mobile Menu Toggle
 // ===================================
-function createMobileMenu() {
-    const navContainer = document.querySelector('.nav-container');
-    const navMenu = document.querySelector('.nav-menu');
+// ===================================
+// Mobile Menu Toggle
+// ===================================
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
 
-    if (window.innerWidth <= 768) {
-        if (!document.querySelector('.mobile-menu-btn')) {
-            const menuBtn = document.createElement('button');
-            menuBtn.className = 'mobile-menu-btn';
-            menuBtn.innerHTML = '☰';
-            menuBtn.setAttribute('aria-label', 'Toggle mobile menu');
+if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
 
-            menuBtn.style.cssText = `
-                display: block;
-                background: none;
-                border: none;
-                font-size: 1.5rem;
-                cursor: pointer;
-                color: var(--color-text);
-                padding: 0.5rem;
-            `;
-
-            // Insert before theme toggle
-            const themeToggle = document.getElementById('themeToggle');
-            navContainer.insertBefore(menuBtn, themeToggle);
-
-            menuBtn.addEventListener('click', () => {
-                const isOpen = navMenu.style.display === 'flex';
-                navMenu.style.display = isOpen ? 'none' : 'flex';
-                menuBtn.innerHTML = isOpen ? '☰' : '✕';
-
-                if (!isOpen) {
-                    navMenu.style.position = 'absolute';
-                    navMenu.style.top = '70px';
-                    navMenu.style.left = '0';
-                    navMenu.style.right = '0';
-                    navMenu.style.flexDirection = 'column';
-                    navMenu.style.background = 'var(--color-surface)';
-                    navMenu.style.padding = 'var(--spacing-lg)';
-                    navMenu.style.boxShadow = 'var(--shadow-lg)';
-                    navMenu.style.borderTop = '1px solid var(--color-border)';
-                }
-            });
-
-            // Close menu when clicking a link
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.style.display = 'none';
-                    menuBtn.innerHTML = '☰';
-                });
-            });
-        }
-    } else {
-        const menuBtn = document.querySelector('.mobile-menu-btn');
-        if (menuBtn) {
-            menuBtn.remove();
-        }
-        navMenu.style.display = 'flex';
-        navMenu.style.position = 'static';
-        navMenu.style.flexDirection = 'row';
-        navMenu.style.background = 'transparent';
-        navMenu.style.padding = '0';
-        navMenu.style.boxShadow = 'none';
-        navMenu.style.borderTop = 'none';
-    }
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
 }
-
-// Initialize mobile menu
-window.addEventListener('resize', createMobileMenu);
-document.addEventListener('DOMContentLoaded', createMobileMenu);
 
 // ===================================
 // Typing Effect for Hero (Optional)
