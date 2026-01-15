@@ -143,6 +143,8 @@ body {
     align-items: center;
     text-decoration: none;
     transition: transform var(--transition-fast);
+    z-index: 1002;
+    padding-right: var(--spacing-sm);
 }
 
 .nav-avatar {
@@ -211,6 +213,8 @@ body {
     font-size: 1.25rem;
     transition: all var(--transition-base);
     margin-left: var(--spacing-md);
+    position: relative;
+    z-index: 1002;
 }
 
 .theme-toggle:hover {
@@ -1043,20 +1047,59 @@ section {
 @media (max-width: 768px) {
     .nav-container {
         height: 70px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 1002;
     }
 
     .nav-menu {
-        gap: var(--spacing-md);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        background: var(--color-bg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-xl);
+        padding: var(--spacing-xl);
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1001;
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
     }
 
     .nav-link {
-        font-size: 0.875rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .theme-toggle {
+        margin-left: auto;
+        margin-right: var(--spacing-sm);
     }
 
     .hero {
-        min-height: 90vh;
+        min-height: 100vh;
         padding: var(--spacing-xl) 0;
-        padding-top: 140px;
+        padding-top: 120px;
+        align-items: flex-start;
+    }
+
+    .hero-container {
+        padding-top: var(--spacing-2xl);
     }
 
     .hero-buttons {
