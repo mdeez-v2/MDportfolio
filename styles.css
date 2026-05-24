@@ -1155,44 +1155,4 @@ section {
     section {
         padding: var(--spacing-xl) 0;
     }
-    .glass {
-      background: rgba(255,255,255,0.12);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.18);
-      border-radius: var(--radius-lg);
-      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-    }
-    .glass:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-    }
-
-    /* Parallax background helper */
-    .parallax {
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-    }
-
-    /* Scroll progress bar */
-    #scrollProgress {
-      position: fixed;
-      top: 0; left: 0;
-      height: 4px;
-      background: var(--gradient-primary);
-      width: 0;
-      z-index: 9999;
-    }
-
-    /* Stroke animation for SVG icons */
-    .stroke-anim {
-      stroke-dasharray: 200;
-      stroke-dashoffset: 200;
-      transition: stroke-dashoffset var(--transition-slow);
-    }
-    .stroke-anim:hover {
-      stroke-dashoffset: 0;
-    }
-      transform: translateY(-4px);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-    }
+}
