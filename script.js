@@ -4,16 +4,22 @@
 const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 
+const themeColor = document.querySelector('meta[name="theme-color"]');
+
+function applyTheme(theme) {
+    html.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    if (themeColor) {
+        themeColor.setAttribute('content', theme === 'dark' ? '#131210' : '#f6f4ef');
+    }
+}
+
 // Check for saved theme preference or default to 'light'
-const currentTheme = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', currentTheme);
+applyTheme(localStorage.getItem('theme') || 'light');
 
 themeToggle.addEventListener('click', () => {
     const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+    applyTheme(currentTheme === 'light' ? 'dark' : 'light');
 });
 
 // ===================================
@@ -115,8 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     animateElements.forEach(el => {
         el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        el.style.transform = 'translateY(12px)';
+        el.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
         observer.observe(el);
     });
 });
@@ -139,7 +145,10 @@ function animateSkillBars(skillCategory) {
 // Stat Number Counter Animation
 // ===================================
 function animateStatNumber(statCard) {
+    if (statCard.dataset.counted === 'true') return;
     const numberElement = statCard.querySelector('.stat-number');
+    if (!numberElement) return;
+    statCard.dataset.counted = 'true';
     const target = parseInt(numberElement.getAttribute('data-target'));
     const duration = 2400; // 3 seconds
     const increment = target / (duration / 16); // 60fps
@@ -155,23 +164,6 @@ function animateStatNumber(statCard) {
         }
     }, 16);
 }
-
-// ===================================
-// Parallax Effect for Hero Orbs
-// ===================================
-window.addEventListener('mousemove', (e) => {
-    const orbs = document.querySelectorAll('.gradient-orb');
-    const mouseX = e.clientX / window.innerWidth;
-    const mouseY = e.clientY / window.innerHeight;
-
-    orbs.forEach((orb, index) => {
-        const speed = (index + 1) * 20;
-        const x = (mouseX - 0.5) * speed;
-        const y = (mouseY - 0.5) * speed;
-
-        orb.style.transform = `translate(${x}px, ${y}px)`;
-    });
-});
 
 // ===================================
 // Mobile Menu Toggle
