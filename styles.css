@@ -871,6 +871,16 @@ section {
     line-height: 1.6;
 }
 
+.cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.cta-actions .btn {
+    width: auto;
+}
+
 .cta-card .btn-primary {
     background: var(--text);
     color: var(--bg);
