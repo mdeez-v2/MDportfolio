@@ -298,6 +298,6 @@ window.addEventListener('scroll', debouncedScroll);
 // ===================================
 // Console Easter Egg
 // ===================================
-console.log('%c👋 Hello there!', 'font-size: 20px; font-weight: bold; color: #6366f1;');
+console.log('%cHello there!', 'font-size: 20px; font-weight: bold; color: #7a3324;');
 console.log('%cLooking at the code? I like your style!', 'font-size: 14px; color: #64748b;');
 console.log('%cFeel free to reach out if you want to chat about this portfolio or anything tech-related.', 'font-size: 12px; color: #94a3b8;');

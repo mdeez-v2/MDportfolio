@@ -479,6 +479,15 @@ section {
     color: var(--text);
 }
 
+.mark {
+    margin-right: 0.7rem;
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+}
+
 .highlight-text p {
     margin: 0;
     font-size: 0.95rem;
@@ -717,8 +726,12 @@ section {
 }
 
 .skill-icon {
-    font-size: 1.25rem;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
     line-height: 1;
+    color: var(--accent);
 }
 
 .skill-header h3 {
@@ -800,15 +813,19 @@ section {
     transition: padding-left var(--ease);
 }
 
+.contact-method::after {
+    content: "→";
+    margin-left: auto;
+    color: var(--accent);
+    transition: transform var(--ease);
+}
+
 .contact-method:hover {
     padding-left: 0.3rem;
 }
 
-.method-icon {
-    width: 1.5rem;
-    font-size: 1.15rem;
-    line-height: 1;
-    text-align: center;
+.contact-method:hover::after {
+    transform: translateX(3px);
 }
 
 .method-info {
